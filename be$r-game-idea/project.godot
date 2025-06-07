@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 Al="*res://AL.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+
 [file_customization]
 
 folder_colors={

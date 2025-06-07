@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://f2dcly0n0n3y"]
+
+[ext_resource type="Texture2D" uid="uid://clcb0pkmp3bmc" path="res://sprites/closetdoorrr.jpg" id="1_ewb5u"]
+[ext_resource type="Texture2D" uid="uid://bhpkarm1wko3h" path="res://sprites/right.jpg" id="2_nx5ox"]
+[ext_resource type="Script" uid="uid://b15x6708m5a7f" path="res://scripts/movescenebypress.gd" id="3_7oj5j"]
+
+[node name="drower1" type="Node2D"]
+
+[node name="Closetdoorrr" type="Sprite2D" parent="."]
+position = Vector2(575.75, 343)
+scale = Vector2(1.20052, 1.20234)
+texture = ExtResource("1_ewb5u")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2(85, -12)
+color = Color(0.672064, 0.672064, 0.672064, 1)
+texture = ExtResource("2_nx5ox")
+polygon = PackedVector2Array(525.065, 622.767, 496.278, 638.703, 467.49, 617.113, 476.229, 556.659, 498.047, 548.174, 528.351, 560.296)
+uv = PackedVector2Array(525.065, 622.767, 496.278, 638.703, 467.49, 617.113, 476.229, 556.659, 498.047, 548.174, 528.351, 560.296)
+
+[node name="Button2" type="Button" parent="Polygon2D"]
+modulate = Color(1, 1, 1, 0)
+offset_left = 458.0
+offset_top = 561.0
+offset_right = 540.0
+offset_bottom = 625.0
+script = ExtResource("3_7oj5j")
+suckmy = "uid://cfmnrrdggb8gb"

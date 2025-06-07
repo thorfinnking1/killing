@@ -28,6 +28,15 @@ offset_bottom = 510.0
 script = ExtResource("2_k8fok")
 suckmy = "uid://d5nmtebfbh1"
 
+[node name="Button5" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 251.0
+offset_top = 415.0
+offset_right = 399.0
+offset_bottom = 475.0
+script = ExtResource("2_k8fok")
+suckmy = "uid://f2dcly0n0n3y"
+
 [node name="Button2" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 offset_left = 553.0

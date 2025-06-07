@@ -36,3 +36,21 @@ offset_right = 1152.47
 offset_bottom = 349.169
 script = ExtResource("2_6v4sa")
 suckmy = "uid://hfmwpr7xkco2"
+
+[node name="Button4" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 661.0
+offset_top = 347.0
+offset_right = 853.0
+offset_bottom = 411.0
+script = ExtResource("2_6v4sa")
+suckmy = "uid://clvkemn1gxbx8"
+
+[node name="Button5" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 656.0
+offset_top = 416.0
+offset_right = 848.0
+offset_bottom = 480.0
+script = ExtResource("2_6v4sa")
+suckmy = "uid://c1ew71gpo5e7i"
