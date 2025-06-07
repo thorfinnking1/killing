@@ -4,8 +4,8 @@
 [ext_resource type="Texture2D" uid="uid://jfqyrln5ywq7" path="res://sprites/unmasked.png" id="1_ws04o"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ws04o"]
-radius = 15.0
-height = 94.0
+radius = 19.0
+height = 118.0
 
 [sub_resource type="Animation" id="Animation_2knq7"]
 length = 0.001
@@ -155,7 +155,7 @@ script = ExtResource("1_unb2m")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, -5)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.24, 0.24)
 texture = ExtResource("1_ws04o")
 hframes = 3
 vframes = 2
@@ -179,4 +179,3 @@ autoplay = "idle"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -4)
 position_smoothing_enabled = true
-position_smoothing_speed = 2.0
