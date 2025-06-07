@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://kwiwqd70fcp1"]
+
+[ext_resource type="Texture2D" uid="uid://bhpkarm1wko3h" path="res://sprites/right.jpg" id="1_sqwjx"]
+[ext_resource type="Script" uid="uid://b15x6708m5a7f" path="res://scripts/movescenebypress.gd" id="2_6v4sa"]
+
+[node name="right" type="Node2D"]
+
+[node name="Front" type="Sprite2D" parent="."]
+position = Vector2(578, 326)
+scale = Vector2(1.20625, 1.02813)
+texture = ExtResource("1_sqwjx")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 29.0
+offset_top = 281.0
+offset_right = 111.0
+offset_bottom = 345.0
+script = ExtResource("2_6v4sa")
+suckmy = "uid://cfmnrrdggb8gb"
+
+[node name="Button2" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 559.0
+offset_top = 582.0
+offset_right = 641.0
+offset_bottom = 646.0
+script = ExtResource("2_6v4sa")
+suckmy = "uid://dedqswgcaev6k"
+
+[node name="Button3" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1070.47
+offset_top = 285.169
+offset_right = 1152.47
+offset_bottom = 349.169
+script = ExtResource("2_6v4sa")
+suckmy = "uid://hfmwpr7xkco2"

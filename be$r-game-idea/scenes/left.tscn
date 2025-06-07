@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://dedqswgcaev6k"]
+
+[ext_resource type="Texture2D" uid="uid://jqdpgktc6cdm" path="res://sprites/left.jpg" id="1_dusdk"]
+[ext_resource type="Script" uid="uid://b15x6708m5a7f" path="res://scripts/movescenebypress.gd" id="2_oyel0"]
+[ext_resource type="Texture2D" uid="uid://cpd078yvbkygi" path="res://sprites/closetdor.png" id="3_t7jjl"]
+
+[node name="left" type="Node2D"]
+
+[node name="Front" type="Sprite2D" parent="."]
+position = Vector2(578, 326)
+scale = Vector2(1.20625, 1.02813)
+texture = ExtResource("1_dusdk")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 29.0
+offset_top = 281.0
+offset_right = 111.0
+offset_bottom = 345.0
+script = ExtResource("2_oyel0")
+suckmy = "uid://hfmwpr7xkco2"
+
+[node name="Button2" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 559.0
+offset_top = 582.0
+offset_right = 641.0
+offset_bottom = 646.0
+script = ExtResource("2_oyel0")
+suckmy = "uid://kwiwqd70fcp1"
+
+[node name="Button3" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+offset_left = 1070.47
+offset_top = 285.169
+offset_right = 1152.47
+offset_bottom = 349.169
+script = ExtResource("2_oyel0")
+suckmy = "uid://cfmnrrdggb8gb"
+
+[node name="Closetdor" type="Sprite2D" parent="."]
+position = Vector2(812, 309)
+rotation = -0.0479811
+scale = Vector2(0.5, 0.438542)
+texture = ExtResource("3_t7jjl")
+
+[node name="Closetdor2" type="Sprite2D" parent="."]
+position = Vector2(811, 313)
+rotation = 0.0900706
+scale = Vector2(0.5, 0.438542)
+texture = ExtResource("3_t7jjl")
+flip_h = true

@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=4 uid="uid://d5nmtebfbh1"]
+[gd_scene load_steps=10 format=4 uid="uid://d5nmtebfbh1"]
 
 [ext_resource type="Texture2D" uid="uid://bt85wge73xyux" path="res://sprites/backgroundmap.png" id="1_8uh7m"]
+[ext_resource type="Script" uid="uid://cmtw7lg5m07ro" path="res://scripts/h.gd" id="1_iyx0m"]
 [ext_resource type="PackedScene" uid="uid://c3v4g6ypq5ds0" path="res://scenes/plr.tscn" id="2_8uh7m"]
+[ext_resource type="PackedScene" uid="uid://clvtcs3vwentu" path="res://scenes/doooooooooooor.tscn" id="4_74lek"]
+[ext_resource type="Texture2D" uid="uid://bsl76k68056g2" path="res://sprites/tuttut.png" id="5_j5jx5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8uh7m"]
 texture = ExtResource("1_8uh7m")
@@ -37,6 +40,7 @@ physics_layer_0/collision_layer = 1
 sources/2 = SubResource("TileSetAtlasSource_6uqi0")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_iyx0m")
 
 [node name="walls2" type="TileMapLayer" parent="."]
 position = Vector2(-8.07794e-28, -18)
@@ -113,5 +117,25 @@ texture = ExtResource("1_8uh7m")
 hframes = 3
 frame = 1
 
+[node name="tp" type="Node2D" parent="."]
+
+[node name="front" type="Marker2D" parent="tp"]
+position = Vector2(761, 621)
+
+[node name="Area2D" parent="." instance=ExtResource("4_74lek")]
+position = Vector2(740, 606)
+place = "uid://cfmnrrdggb8gb"
+
+[node name="Tuttut" type="Sprite2D" parent="."]
+modulate = Color(0.536047, 0.471408, 3.85046e-07, 1)
+position = Vector2(623, 580)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_j5jx5")
+
+[node name="Tuttut2" type="Sprite2D" parent="."]
+position = Vector2(623, 576)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("5_j5jx5")
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_8uh7m")]
-position = Vector2(338, 391)
+position = Vector2(406, 403)

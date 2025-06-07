@@ -149,7 +149,7 @@ _data = {
 &"walkright": SubResource("Animation_j2olp")
 }
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["plr"]]
 floor_max_angle = 1.39626
 script = ExtResource("1_unb2m")
 
