@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl2x2yg4dp643"]
+
+[ext_resource type="Texture2D" uid="uid://3qpol41k5nx6" path="res://sprites/port4.png" id="1_3wh8m"]
+[ext_resource type="Script" uid="uid://f2fx17at6d2r" path="res://scripts/quiting.gd" id="1_tnlko"]
+[ext_resource type="Texture2D" uid="uid://s51cwryko8t5" path="res://sprites/ohmyiImeaneye.png" id="2_tnlko"]
+
+[node name="quiting" type="Node2D"]
+script = ExtResource("1_tnlko")
+
+[node name="Port4" type="Sprite2D" parent="."]
+position = Vector2(590, 337)
+scale = Vector2(1, 0.660937)
+texture = ExtResource("1_3wh8m")
+
+[node name="OhmyiImeaneye" type="Sprite2D" parent="."]
+position = Vector2(610, 332)
+scale = Vector2(1.28437, 1.59687)
+texture = ExtResource("2_tnlko")

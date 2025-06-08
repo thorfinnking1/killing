@@ -1,0 +1,315 @@
+[gd_scene load_steps=9 format=3 uid="uid://77dr5jce3nmb"]
+
+[ext_resource type="Script" uid="uid://dmhtbswsskvp8" path="res://nothing.gd" id="1_176um"]
+[ext_resource type="Texture2D" uid="uid://3qpol41k5nx6" path="res://sprites/port4.png" id="2_xlxir"]
+[ext_resource type="Texture2D" uid="uid://s51cwryko8t5" path="res://sprites/ohmyiImeaneye.png" id="3_40m2u"]
+[ext_resource type="Script" uid="uid://b15x6708m5a7f" path="res://scripts/movescenebypress.gd" id="4_xlxir"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_176um"]
+font_size = 32
+
+[sub_resource type="Animation" id="Animation_176um"]
+resource_name = "jizz"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OhmyiImeaneye:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.125, 1.05)]
+}
+
+[sub_resource type="Animation" id="Animation_xlxir"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("OhmyiImeaneye:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_40m2u"]
+_data = {
+&"RESET": SubResource("Animation_xlxir"),
+&"jizz": SubResource("Animation_176um")
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_176um")
+
+[node name="Port4" type="Sprite2D" parent="."]
+position = Vector2(569, 333)
+scale = Vector2(3.11406, 2.16875)
+texture = ExtResource("2_xlxir")
+
+[node name="OhmyiImeaneye" type="Sprite2D" parent="."]
+position = Vector2(551, 336)
+texture = ExtResource("3_40m2u")
+offset = Vector2(10, 0)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 32.0
+offset_top = 83.0
+offset_right = 391.0
+offset_bottom = 152.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 41.0
+offset_top = -3.0
+offset_right = 215.0
+offset_bottom = 42.0
+scale = Vector2(1.48574, 1.60813)
+text = "Developers"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label2" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 145.0
+offset_right = 284.0
+offset_bottom = 190.0
+text = "ThorFinnKing"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label3" type="Label" parent="ColorRect"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 92.0
+offset_right = 306.0
+offset_bottom = 137.0
+text = "The Masked One"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+offset_left = 800.0
+offset_top = 330.0
+offset_right = 1088.0
+offset_bottom = 399.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = -4.0
+offset_right = 223.0
+offset_bottom = 41.0
+scale = Vector2(1.48574, 1.60813)
+text = "Writings"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label2" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = -16.0
+offset_top = 90.0
+offset_right = 323.0
+offset_bottom = 135.0
+text = "ThorFinnKing (mostly)"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label3" type="Label" parent="ColorRect3"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 150.0
+offset_right = 277.0
+offset_bottom = 195.0
+text = "The Masked One"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+offset_left = 32.0
+offset_top = 320.0
+offset_right = 320.0
+offset_bottom = 389.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 74.0
+offset_right = 248.0
+offset_bottom = 45.0
+scale = Vector2(1.48574, 1.60813)
+text = "Sound"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label2" type="Label" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 147.0
+offset_right = 377.0
+offset_bottom = 192.0
+text = "ThorFinnKing"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label3" type="Label" parent="ColorRect4"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 93.0
+offset_right = 270.0
+offset_bottom = 138.0
+text = "The Masked One"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+offset_left = 413.0
+offset_top = 449.0
+offset_right = 701.0
+offset_bottom = 518.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect5"]
+layout_mode = 0
+offset_left = 27.0
+offset_right = 201.0
+offset_bottom = 45.0
+scale = Vector2(1.48574, 1.60813)
+text = "VoiceOver"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label2" type="Label" parent="ColorRect5"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = 78.0
+offset_right = 371.0
+offset_bottom = 123.0
+text = "ThorFinnKing(Him,Demon M)"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label3" type="Label" parent="ColorRect5"]
+layout_mode = 0
+offset_left = -66.0
+offset_top = 137.0
+offset_right = 363.0
+offset_bottom = 182.0
+text = "The Masked One(Demon M)"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="ColorRect6" type="ColorRect" parent="."]
+offset_left = 413.0
+offset_top = 225.0
+offset_right = 701.0
+offset_bottom = 294.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect6"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = -3.0
+offset_right = 340.0
+offset_bottom = 90.0
+scale = Vector2(0.758675, 0.752076)
+text = "Hoping the game wins the game jam"
+label_settings = SubResource("LabelSettings_176um")
+autowrap_mode = 2
+
+[node name="Label2" type="Label" parent="ColorRect6"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 121.0
+offset_right = 488.0
+offset_bottom = 166.0
+text = "ThorFinnKing"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label3" type="Label" parent="ColorRect6"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 72.0
+offset_right = 444.0
+offset_bottom = 117.0
+text = "The Masked One"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 739.0
+offset_top = 86.0
+offset_right = 1098.0
+offset_bottom = 155.0
+color = Color(0.184314, 0.184314, 0.184314, 0.760784)
+
+[node name="Label" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 130.0
+offset_top = -5.0
+offset_right = 304.0
+offset_bottom = 40.0
+scale = Vector2(1.48574, 1.60813)
+text = "ART"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label4" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 75.0
+offset_top = 149.0
+offset_right = 281.0
+offset_bottom = 194.0
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="Label5" type="Label" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 96.0
+offset_right = 303.0
+offset_bottom = 141.0
+text = "The Masked One"
+label_settings = SubResource("LabelSettings_176um")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_40m2u")
+}
+autoplay = "jizz"
+speed_scale = 0.5
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 442.0
+offset_top = 43.0
+offset_right = 732.0
+offset_bottom = 184.0
+scale = Vector2(0.849862, 0.889476)
+text = "^
+Who Wants to leave?"
+label_settings = SubResource("LabelSettings_176um")
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Label6" type="Label" parent="Label2"]
+layout_mode = 0
+offset_left = 36.4765
+offset_top = 154.023
+offset_right = 242.477
+offset_bottom = 199.023
+text = "M"
+label_settings = SubResource("LabelSettings_176um")
+horizontal_alignment = 1
+
+[node name="Label7" type="Label" parent="Label2"]
+layout_mode = 0
+offset_left = 25.8866
+offset_top = 384.496
+offset_right = 231.887
+offset_bottom = 429.496
+text = "M"
+label_settings = SubResource("LabelSettings_176um")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+offset_left = 456.0
+offset_top = 39.0
+offset_right = 671.0
+offset_bottom = 171.0
+script = ExtResource("4_xlxir")
+suckmy = "uid://do83croli6orl"
