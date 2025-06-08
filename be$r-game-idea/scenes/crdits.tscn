@@ -316,5 +316,6 @@ suckmy = "uid://do83croli6orl"
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(566, 319)
+energy = 0.5
 texture = ExtResource("2_xlxir")
 texture_scale = 15.0
