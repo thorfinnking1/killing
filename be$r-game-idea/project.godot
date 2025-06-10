@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="be$r game idea"
-run/main_scene="uid://do83croli6orl"
+run/main_scene="uid://rww3udtgy1gd"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Al="*res://AL.gd"
+QuestsBar="*res://scenes/quests_bar.tscn"
 
 [display]
 

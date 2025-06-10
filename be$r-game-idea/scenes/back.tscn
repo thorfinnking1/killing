@@ -5,6 +5,21 @@
 [ext_resource type="Texture2D" uid="uid://vnms2a8rltb3" path="res://sprites/port1.png" id="3_8odij"]
 [ext_resource type="Texture2D" uid="uid://di3qh6qj357em" path="res://sprites/port2.png" id="4_m1u4u"]
 
+[sub_resource type="Animation" id="Animation_k6760"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Port1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(566, 329)]
+}
+
 [sub_resource type="Animation" id="Animation_gfqhh"]
 resource_name = "floating"
 loop_mode = 1
@@ -19,21 +34,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1),
 "update": 0,
 "values": [Vector2(566, 329), Vector2(550, 292), Vector2(530, 311)]
-}
-
-[sub_resource type="Animation" id="Animation_k6760"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Port1:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(566, 329)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_naw5q"]

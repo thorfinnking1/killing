@@ -222,3 +222,7 @@ texture = ExtResource("5_j5jx5")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_8uh7m")]
 position = Vector2(607, 622)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_74lek")]
+position = Vector2(993, 606)
+place = "uid://bs0g0pshpnlq5"
