@@ -655,9 +655,9 @@ autoplay = "anima"
 speed_scale = 0.35
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
-position = Vector2(897.348, 389.1)
-rotation = 1.69259
-scale = Vector2(3.99979, 3.99977)
+position = Vector2(892.071, 397.325)
+rotation = 1.70927
+scale = Vector2(3.99986, 3.99985)
 mesh = SubResource("SphereMesh_r4heh")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
@@ -857,7 +857,7 @@ offset_bottom = 346.0
 scale = Vector2(1.2, 1.2)
 text = "PLAY"
 script = ExtResource("13_wmui7")
-suckmy = "uid://hfmwpr7xkco2"
+suckmy = "uid://dknk3i7shmbeq"
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 0
