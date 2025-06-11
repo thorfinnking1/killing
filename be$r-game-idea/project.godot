@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 Al="*res://AL.gd"
-QuestsBar="*res://scenes/quests_bar.tscn"
 
 [display]
 

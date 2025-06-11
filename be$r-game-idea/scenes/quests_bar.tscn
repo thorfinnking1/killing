@@ -1,8 +1,70 @@
-[gd_scene load_steps=3 format=3 uid="uid://jionjaoyhqdc"]
+[gd_scene load_steps=6 format=3 uid="uid://jionjaoyhqdc"]
 
-[ext_resource type="Script" uid="uid://c8voaigeqvcy5" path="res://quest.gd" id="1_gsngi"]
+[ext_resource type="Script" uid="uid://bxepjds40hpix" path="res://scenes/quest_bar.gd" id="1_gsngi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_eijlr"]
+font_size = 12
+
+[sub_resource type="Animation" id="Animation_eijlr"]
+resource_name = "quest_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["go to friend's apartament(room 1)", "go to friend's apartament(room 1)"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_q0msh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Control/Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": ["go to friend's apartament(room 1)"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Control/Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_joqch"]
+_data = {
+&"RESET": SubResource("Animation_q0msh"),
+&"quest_1": SubResource("Animation_eijlr")
+}
 
 [node name="Control" type="Control"]
 z_index = 3
@@ -14,7 +76,6 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 0
 offset_left = 21.0
 offset_top = 38.0
 offset_right = 273.0
@@ -31,6 +92,15 @@ offset_top = 37.0
 offset_right = -880.0
 offset_bottom = 80.0
 grow_horizontal = 0
-text = "hello"
+text = "go to friend's apartament(room 1)"
 label_settings = SubResource("LabelSettings_eijlr")
+horizontal_alignment = 1
+vertical_alignment = 1
+visible_characters = 0
+visible_ratio = 0.0
 script = ExtResource("1_gsngi")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_joqch")
+}
