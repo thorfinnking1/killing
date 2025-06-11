@@ -1,7 +1,7 @@
-[gd_scene load_steps=30 format=3 uid="uid://rww3udtgy1gd"]
+[gd_scene load_steps=30 format=3 uid="uid://do83croli6orl"]
 
 [ext_resource type="Texture2D" uid="uid://vnms2a8rltb3" path="res://sprites/port1.png" id="1_cg6ny"]
-[ext_resource type="Script" path="res://scripts/menugobrrrrrrr.gd" id="1_r4heh"]
+[ext_resource type="Script" uid="uid://dhymk01youfb4" path="res://scripts/menugobrrrrrrr.gd" id="1_r4heh"]
 [ext_resource type="Texture2D" uid="uid://di3qh6qj357em" path="res://sprites/port2.png" id="2_abf4h"]
 [ext_resource type="Texture2D" uid="uid://b7upighiekbny" path="res://sprites/eeeeye.png" id="4_epd64"]
 [ext_resource type="Texture2D" uid="uid://s51cwryko8t5" path="res://sprites/ohmyiImeaneye.png" id="5_sc1v0"]
@@ -655,9 +655,9 @@ autoplay = "anima"
 speed_scale = 0.35
 
 [node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
-position = Vector2(892.071, 397.325)
-rotation = 1.70927
-scale = Vector2(3.99986, 3.99985)
+position = Vector2(1835.72, 794.19)
+rotation = 1.88077
+scale = Vector2(3.99969, 3.9997)
 mesh = SubResource("SphereMesh_r4heh")
 
 [node name="Skeleton2D" type="Skeleton2D" parent="."]
