@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://jionjaoyhqdc"]
 
-[ext_resource type="Script" uid="uid://bxepjds40hpix" path="res://scenes/quest_bar.gd" id="1_gsngi"]
+[ext_resource type="Script" uid="uid://bxepjds40hpix" path="res://scripts/quest_bar.gd" id="1_gsngi"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_eijlr"]
 font_size = 12

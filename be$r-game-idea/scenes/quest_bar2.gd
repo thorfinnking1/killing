@@ -8,11 +8,11 @@ func _process(delta):
 		1:
 			if !Al.quest_start_1:
 				ani.play("quest_1")
-			elif Al.quest_start_1 and !Al.cat_food and Al.cat_alive:
+			elif Al.quest_start_1 and !Al.cat_food and !Al.cat_interact:
 				ani.play("quest_start_1")
 			n+=1
 		2:
-			if Al.cat_food:
+			if Al.cat_food and !Al.cat_interact:
 				ani.play("feed cat")
 				n+=1
 			if n == 2 and Al.take:
@@ -21,8 +21,8 @@ func _process(delta):
 		3:
 			if Al.cat_interact:
 				ani.play("leave Now")
-				n+=1
 				Al.m+=1
+				n+=1
 	match Al.m:
 		1:
 			if !Al.cat_alive:

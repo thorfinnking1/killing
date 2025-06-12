@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://c3v4g6ypq5ds0"]
+[gd_scene load_steps=20 format=3 uid="uid://c3v4g6ypq5ds0"]
 
 [ext_resource type="Script" uid="uid://d2f4qvbqkhsf1" path="res://scripts/plrmovement.gd" id="1_unb2m"]
 [ext_resource type="Texture2D" uid="uid://jfqyrln5ywq7" path="res://sprites/unmasked.png" id="1_ws04o"]
-[ext_resource type="Script" uid="uid://bxepjds40hpix" path="res://scenes/quest_bar.gd" id="3_seiu4"]
+[ext_resource type="Script" uid="uid://bxepjds40hpix" path="res://scripts/quest_bar.gd" id="3_seiu4"]
+[ext_resource type="Texture2D" uid="uid://bbjdu0ugw6x84" path="res://sprites/eye.png" id="4_fmeju"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ws04o"]
 radius = 19.0
@@ -150,34 +151,6 @@ _data = {
 &"walkright": SubResource("Animation_j2olp")
 }
 
-[sub_resource type="Animation" id="Animation_k8fok"]
-resource_name = "quest_1"
-length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": ["go to friend's apartament(room 1)", "go to friend's apartament(room 1)"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label:visible_ratio")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
-
 [sub_resource type="Animation" id="Animation_vr1b1"]
 length = 0.001
 tracks/0/type = "value"
@@ -203,33 +176,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [1.0]
-}
-
-[sub_resource type="Animation" id="Animation_seiu4"]
-resource_name = "quest_start_1"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label:text")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": ["grab cat food", "grab cat food"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label:visible_ratio")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
 }
 
 [sub_resource type="Animation" id="Animation_m1u4u"]
@@ -286,8 +232,36 @@ tracks/1/keys = {
 "values": [0.0, 1.0]
 }
 
-[sub_resource type="Animation" id="Animation_md8u1"]
-resource_name = "take"
+[sub_resource type="Animation" id="Animation_k8fok"]
+resource_name = "quest_1"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["go to friend's apartament(room 1)", "go to friend's apartament(room 1)"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_seiu4"]
+resource_name = "quest_start_1"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -298,7 +272,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": ["take its eyes!!!!", "take its eyes!!!!"]
+"values": ["grab cat food", "grab cat food"]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -336,6 +310,33 @@ tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_md8u1"]
+resource_name = "take"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:text")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": ["take its eyes!!!!", "take its eyes!!!!"]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Label:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [0.0, 1.0]
@@ -388,12 +389,14 @@ position_smoothing_enabled = true
 
 [node name="Control2" type="Control" parent="."]
 layout_mode = 3
+anchors_preset = 0
 offset_left = -1.0
 offset_top = 3.0
 offset_right = 39.0
 offset_bottom = 43.0
 
 [node name="ColorRect" type="ColorRect" parent="Control2"]
+layout_mode = 0
 offset_left = -538.0
 offset_top = -275.0
 offset_right = -286.0
@@ -416,3 +419,9 @@ label_settings = SubResource("LabelSettings_cjvkk")
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_seiu4")
+
+[node name="Eye" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(496, -261)
+scale = Vector2(0.0859375, 0.108594)
+texture = ExtResource("4_fmeju")
