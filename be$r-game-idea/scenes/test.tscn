@@ -204,7 +204,7 @@ label_settings = SubResource("LabelSettings_j5jx5")
 [node name="tp" type="Node2D" parent="."]
 
 [node name="front" type="Marker2D" parent="tp"]
-position = Vector2(712, 610)
+position = Vector2(607, 622)
 
 [node name="room_1" type="Marker2D" parent="tp"]
 position = Vector2(993, 606)
