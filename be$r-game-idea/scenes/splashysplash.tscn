@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq7oev1n5d67p"]
+
+[ext_resource type="Texture2D" uid="uid://ddt0hycui6gxa" path="res://sprites/splashscreenimage.jpg" id="1_26yln"]
+[ext_resource type="Script" uid="uid://b2iuliptt2poi" path="res://scripts/nothinghere.gd" id="1_p5m31"]
+
+[node name="splashysplash" type="Node2D"]
+script = ExtResource("1_p5m31")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1213.0
+offset_bottom = 668.0
+color = Color(0, 0, 0, 1)
+
+[node name="Splashscreenimage" type="Sprite2D" parent="."]
+position = Vector2(585, 325)
+scale = Vector2(0.591151, 0.538904)
+texture = ExtResource("1_26yln")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.5
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

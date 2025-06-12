@@ -11,8 +11,9 @@ config_version=5
 [application]
 
 config/name="be$r game idea"
-run/main_scene="uid://do83croli6orl"
+run/main_scene="uid://bq7oev1n5d67p"
 config/features=PackedStringArray("4.4", "Forward Plus")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
 
 [autoload]
