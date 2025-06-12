@@ -44,7 +44,7 @@ sources/2 = SubResource("TileSetAtlasSource_6uqi0")
 font_size = 96
 font_color = Color(0, 0, 0, 1)
 
-[node name="Node2D" type="Node2D"]
+[node name="test" type="Node2D"]
 script = ExtResource("1_iyx0m")
 
 [node name="walls2" type="TileMapLayer" parent="."]
@@ -204,7 +204,10 @@ label_settings = SubResource("LabelSettings_j5jx5")
 [node name="tp" type="Node2D" parent="."]
 
 [node name="front" type="Marker2D" parent="tp"]
-position = Vector2(607, 622)
+position = Vector2(712, 610)
+
+[node name="room_1" type="Marker2D" parent="tp"]
+position = Vector2(993, 606)
 
 [node name="Area2D" parent="." instance=ExtResource("4_74lek")]
 position = Vector2(574, 606)
