@@ -1,16 +1,16 @@
 [gd_scene load_steps=22 format=4 uid="uid://by028kf4kuujs"]
 
 [ext_resource type="Texture2D" uid="uid://dyuprnyla0jhr" path="res://sprites/kitchenstuff.png" id="1_7ilqw"]
-[ext_resource type="Script" uid="uid://dtpb1q77oag1i" path="res://scenes/kitchen.gd" id="1_cwf2y"]
+[ext_resource type="Script" uid="uid://dtpb1q77oag1i" path="res://scripts/kitchen.gd" id="1_cwf2y"]
 [ext_resource type="Texture2D" uid="uid://bt85wge73xyux" path="res://sprites/backgroundmap.png" id="2_mrp8g"]
-[ext_resource type="Script" uid="uid://i35l3a4powms" path="res://scenes/area_2d.gd" id="3_v3ycp"]
+[ext_resource type="Script" uid="uid://i35l3a4powms" path="res://scripts/area_2d.gd" id="3_v3ycp"]
 [ext_resource type="Texture2D" uid="uid://bu8y2fvc83rnh" path="res://sprites/enteract.png" id="4_g3o0j"]
 [ext_resource type="PackedScene" uid="uid://clvtcs3vwentu" path="res://scenes/doooooooooooor.tscn" id="5_58u3k"]
 [ext_resource type="PackedScene" uid="uid://c3v4g6ypq5ds0" path="res://scenes/plr.tscn" id="6_g3o0j"]
 [ext_resource type="PackedScene" uid="uid://d3xaciyplyale" path="res://scenes/catbowl_1.tscn" id="7_58u3k"]
 [ext_resource type="Texture2D" uid="uid://crlvfvgd0i4cn" path="res://sprites/cat2.png" id="9_vpxcu"]
 [ext_resource type="Texture2D" uid="uid://dw016yp0dluko" path="res://sprites/cat1.png" id="10_k1jr4"]
-[ext_resource type="Script" uid="uid://bwts53be32sry" path="res://scenes/cat.gd" id="10_vpxcu"]
+[ext_resource type="Script" uid="uid://bwts53be32sry" path="res://scripts/cat.gd" id="10_vpxcu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mrp8g"]
 texture = ExtResource("1_7ilqw")
