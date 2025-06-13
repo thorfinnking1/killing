@@ -387,41 +387,43 @@ autoplay = "idle"
 position = Vector2(0, -4)
 position_smoothing_enabled = true
 
-[node name="Control2" type="Control" parent="."]
-layout_mode = 3
-anchors_preset = 0
-offset_left = -1.0
-offset_top = 3.0
-offset_right = 39.0
-offset_bottom = 43.0
-
-[node name="ColorRect" type="ColorRect" parent="Control2"]
-layout_mode = 0
-offset_left = -538.0
-offset_top = -275.0
-offset_right = -286.0
-offset_bottom = -235.0
-color = Color(0, 0, 0, 0.380392)
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Control2"]
-libraries = {
-&"": SubResource("AnimationLibrary_78dkc")
-}
-autoplay = "RESET"
-
-[node name="Label" type="Label" parent="Control2"]
-layout_mode = 0
-offset_left = -537.0
-offset_top = -275.0
-offset_right = -285.0
-offset_bottom = -235.0
-label_settings = SubResource("LabelSettings_cjvkk")
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("3_seiu4")
-
 [node name="Eye" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(496, -261)
 scale = Vector2(0.0859375, 0.108594)
 texture = ExtResource("4_fmeju")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control2" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1.0
+offset_top = 3.0
+offset_right = 586.0
+offset_bottom = 296.0
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control2"]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 47.0
+offset_right = 318.0
+offset_bottom = 87.0
+color = Color(0, 0, 0, 0.380392)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/Control2"]
+libraries = {
+&"": SubResource("AnimationLibrary_78dkc")
+}
+autoplay = "RESET"
+
+[node name="Label" type="Label" parent="CanvasLayer/Control2"]
+layout_mode = 0
+offset_left = 71.0
+offset_top = 47.0
+offset_right = 316.0
+offset_bottom = 87.0
+label_settings = SubResource("LabelSettings_cjvkk")
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_seiu4")
