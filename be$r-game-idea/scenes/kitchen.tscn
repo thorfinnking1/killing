@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bu8y2fvc83rnh" path="res://sprites/enteract.png" id="4_g3o0j"]
 [ext_resource type="PackedScene" uid="uid://clvtcs3vwentu" path="res://scenes/doooooooooooor.tscn" id="5_58u3k"]
 [ext_resource type="PackedScene" uid="uid://c3v4g6ypq5ds0" path="res://scenes/plr.tscn" id="6_g3o0j"]
-[ext_resource type="PackedScene" path="res://scenes/catbowl_1.tscn" id="7_58u3k"]
+[ext_resource type="PackedScene" uid="uid://d3xaciyplyale" path="res://scenes/catbowl_1.tscn" id="7_58u3k"]
 [ext_resource type="Texture2D" uid="uid://crlvfvgd0i4cn" path="res://sprites/cat2.png" id="9_vpxcu"]
 [ext_resource type="Texture2D" uid="uid://dw016yp0dluko" path="res://sprites/cat1.png" id="10_k1jr4"]
 [ext_resource type="Script" uid="uid://bwts53be32sry" path="res://scripts/cat.gd" id="10_vpxcu"]
@@ -90,7 +90,7 @@ size = Vector2(76, 57.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k1jr4"]
 size = Vector2(136.369, 53.6312)
 
-[node name="Node2D" type="Node2D"]
+[node name="kitchen" type="Node2D"]
 script = ExtResource("1_cwf2y")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

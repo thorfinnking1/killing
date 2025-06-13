@@ -11,6 +11,8 @@ func _on_body_exited(body: Node2D) -> void:
 		$Enteract.visible=false
 
 func _process(_delta: float) -> void:
+	Al.roomoutof=get_parent().name
 	if Input.is_action_just_pressed("e")and $Enteract.visible:
 		Al.quest_start_1 = true
+		print(Al.roomoutof)
 		get_tree().change_scene_to_file(place)
